@@ -4,6 +4,27 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+@layer components {
+  .btn {
+    @apply bg-gradient-to-b from-[#A4BC46] to-[#85A019] font-Roboto text-white inline-block py-5 px-9 rounded-lg font-medium text-base mt-3;
+  }
+  .woman-card {
+    @apply bg-white px-5 pt-5 pb-6 shadow-lg rounded-3xl;
+  }
+  .woman-card-img {
+    @apply flex justify-center bg-[#F1F1F1] rounded-3xl py-7 px-5;
+  }
+  .woman-card-h2 {
+    @apply text-[#363958] font-bold text-2xl mt-4;
+  }
+  .woman-card-p {
+    @apply text-[#3E3E3E] font-normal text-base mt-3;
+  }
+  .woman-card-h4 {
+    @apply text-[#FABE4C] font-extrabold text-4xl;
+  }
+}
+
 @layer utilities {
   .font-Bebas {
     font-family: "Bebas Neue", sans-serif;
