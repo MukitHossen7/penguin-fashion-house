@@ -17,13 +17,15 @@
   <body>
     <header class="bg-[#FFFBF0]">
       <!-- navigation bar -->
-      <nav class="max-w-7xl mx-auto flex items-center justify-between pt-12">
+      <nav
+        class="max-w-full lg:max-w-7xl mx-auto flex items-center justify-between pt-12 px-5 lg:px-0"
+      >
         <!-- child-1 -->
         <div>
-          <img src="icons/logo.png" alt="" class="max-w-sm" />
+          <img src="icons/logo.png" alt="" class="max-w-[240px] lg:max-w-sm" />
         </div>
         <!-- child-2 -->
-        <div class="">
+        <div class="hidden lg:block">
           <ul
             class="flex gap-12 text-lg font-medium text-[#3C3C3C] font-Roboto"
           >
@@ -33,15 +35,19 @@
             <li><a href="">Contact us</a></li>
           </ul>
         </div>
+        <div class="block text-lg lg:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </nav>
+
       <!-- Banner Section -->
       <div
-        class="max-w-7xl mx-auto flex items-center justify-between mt-5 pb-20"
+        class="max-w-full md:max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 mt-12 lg:mt-5 pb-20 px-5 lg:px-0"
       >
         <!-- child-1 -->
         <div class="max-w-md">
           <h1
-            class="font-Bebas text-[#363958] text-[80px] font-normal leading-none"
+            class="font-Bebas text-[#363958] text-[60px] md:text-[80px] font-normal leading-none"
           >
             <span class="text-[#FABE4C] text-">Be the Penguins</span> of Winter
           </h1>
@@ -58,7 +64,7 @@
           </div>
         </div>
         <!-- child-2 -->
-        <div class="max-w-md mr-14">
+        <div class="max-w-md mr-0 md:mr-14">
           <img src="images/model.png" alt="" />
         </div>
       </div>
