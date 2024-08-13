@@ -681,6 +681,48 @@ video {
   color: rgb(250 190 76 / var(--tw-text-opacity));
 }
 
+.other-card {
+  display: flex;
+  max-width: 490px;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 768px) {
+  .other-card {
+    flex-direction: row;
+    padding-right: 5rem;
+  }
+}
+
+.other-card-h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(54 57 88 / var(--tw-text-opacity));
+}
+
+.other-card-p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgb(62 62 62 / var(--tw-text-opacity));
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -730,10 +772,6 @@ video {
   margin-top: 8rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
 .block {
   display: block;
 }
@@ -758,26 +796,6 @@ video {
   max-height: 293px;
 }
 
-.max-h-\[355px\] {
-  max-height: 355px;
-}
-
-.max-h-full {
-  max-height: 100%;
-}
-
-.max-h-\[350px\] {
-  max-height: 350px;
-}
-
-.max-h-\[340px\] {
-  max-height: 340px;
-}
-
-.max-h-\[300px\] {
-  max-height: 300px;
-}
-
 .max-w-20 {
   max-width: 5rem;
 }
@@ -798,12 +816,8 @@ video {
   max-width: 293px;
 }
 
-.max-w-\[490px\] {
-  max-width: 490px;
-}
-
-.max-w-\[550px\] {
-  max-width: 550px;
+.max-w-\[600px\] {
+  max-width: 600px;
 }
 
 .max-w-full {
@@ -814,16 +828,12 @@ video {
   max-width: 28rem;
 }
 
-.max-w-\[600px\] {
-  max-width: 600px;
-}
-
-.flex-1 {
-  flex: 1 1 0%;
-}
-
 .flex-col {
   flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
 }
 
 .items-center {
@@ -838,6 +848,10 @@ video {
   gap: 3rem;
 }
 
+.gap-20 {
+  gap: 5rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
@@ -846,44 +860,13 @@ video {
   gap: 2rem;
 }
 
-.gap-20 {
-  gap: 5rem;
-}
-
-.gap-10 {
-  gap: 2.5rem;
-}
-
-.rounded-2xl {
-  border-radius: 1rem;
-}
-
-.border {
-  border-width: 1px;
-}
-
-.border-2 {
-  border-width: 2px;
-}
-
-.border-green-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(34 197 94 / var(--tw-border-opacity));
-}
-
-.border-red-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .bg-\[\#FFFBF0\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 251 240 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .px-4 {
@@ -896,21 +879,8 @@ video {
   padding-right: 1.25rem;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .pb-20 {
   padding-bottom: 5rem;
-}
-
-.pl-7 {
-  padding-left: 1.75rem;
-}
-
-.pr-20 {
-  padding-right: 5rem;
 }
 
 .pt-12 {
@@ -919,11 +889,6 @@ video {
 
 .text-center {
   text-align: center;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .text-5xl {
@@ -943,10 +908,6 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.font-bold {
-  font-weight: 700;
 }
 
 .font-medium {
@@ -981,12 +942,6 @@ video {
   color: rgb(250 190 76 / var(--tw-text-opacity));
 }
 
-.shadow-lg {
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .font-Bebas {
   font-family: "Bebas Neue", sans-serif;
 }
@@ -994,6 +949,8 @@ video {
 .font-Roboto {
   font-family: "Roboto", sans-serif;
 }
+
+/* other section */
 
 @media (min-width: 768px) {
   .md\:mr-14 {

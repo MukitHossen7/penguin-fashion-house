@@ -42,6 +42,19 @@
   }
 }
 
+/* other section */
+@layer components {
+  .other-card {
+    @apply max-w-[490px] bg-white shadow-lg py-5 pl-7 pr-7 md:pr-20 rounded-2xl flex flex-col md:flex-row gap-10 items-center;
+  }
+  .other-card-h3 {
+    @apply text-[#363958] text-2xl font-bold mb-4;
+  }
+  .other-card-p {
+    @apply text-[#3E3E3E] font-normal text-base;
+  }
+}
+
 @layer utilities {
   .font-Bebas {
     font-family: "Bebas Neue", sans-serif;
